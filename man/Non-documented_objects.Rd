@@ -27,6 +27,7 @@
 \alias{addPlot}
 \alias{addPng}
 \alias{addTrellisObject}
+\alias{addTOC}
 \alias{addSessionInfo}
 
 \alias{rtf.forest.plot.xscale}
@@ -43,7 +44,7 @@
   in reality.
 }
 
-\author{Michael E. Schaffer}
+\author{Michael Schaffer}
 
 
 \keyword{documentation}

@@ -16,7 +16,10 @@
 	Get an RTF encoded forest plot.
  }
 
- \usage{rtf.forest.plot(x=1.25, min=0.5, max=2, xlim=c(0.1, 12), width=3, height=0.3, cex=1, lwd=0.75, res=300)}
+ \usage{
+rtf.forest.plot(x=1.25, min=0.5, max=2, xlim=c(0.1, 12), width=3, height=0.3, cex=1,
+  lwd=0.75, res=300)
+}
 
  \arguments{
  	\item{x}{x (e.g. hazard ratio).}
@@ -37,6 +40,7 @@
  }
 
  \examples{
+ \dontrun{
  tab<-data.frame(
 	Label=c("Test1","Test2","Test3"),
  	HR=c(1,2,0.45),
@@ -65,6 +69,5 @@
  addTable(rtf,tab,col.widths=c(0.75,0.75,0.75,0.75,3))
  done(rtf)
  }
-
- \author{Michael E. Schaffer}
+ }
 

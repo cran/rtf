@@ -9,9 +9,7 @@
  \name{addTable.RTF}
 \alias{addTable.RTF}
 \alias{RTF.addTable}
-\alias{addTable.RTF}
 \alias{addTable,RTF-method}
-
 
  \title{Insert a table into the RTF document}
 
@@ -19,15 +17,23 @@
 	Insert a table into the RTF document.
  }
 
- \usage{\method{addTable}{RTF}(this, dat, col.widths=NULL, font.size=NULL, row.names=FALSE, NA.string="-", ...)}
+ \usage{
+\method{addTable}{RTF}(this, dat, col.widths=NULL, col.justify=NULL, header.col.justify=NULL,
+  font.size=NULL, row.names=FALSE, NA.string="-", space.before=NULL, space.after=NULL,
+  ...)
+}
 
  \arguments{
  	\item{this}{An RTF object.}
  	\item{dat}{A matrix, data frame, or table.}
 	\item{col.widths}{A \code{\link[base]{vector}} of column widths in inches. \bold{optional}.}
+	\item{col.justify}{A single value or \code{\link[base]{vector}} of column justifications ('L', 'R', 'C', or 'J' for Left, Right, Center, and Justify, respectively). \bold{optional}.}
+	\item{header.col.justify}{A single value or \code{\link[base]{vector}} of table header column justifications ('L', 'R', 'C', or 'J' for Left, Right, Center, and Justify, respectively). \bold{optional}.}
 	\item{font.size}{Font size in points. \bold{optional}.}
 	\item{row.names}{Boolean argument to include row names in tables. \bold{optional}.}
 	\item{NA.string}{A character string to replace NA values in the table.}
+	\item{space.before}{Space before each row (in inches). \bold{optional}.}
+	\item{space.after}{Space after each row (in inches). \bold{optional}.}
  	\item{...}{Not used.}
  }
 
@@ -43,7 +49,7 @@
  done(rtf)
  }
 
- \author{Michael E. Schaffer}
+ \author{Michael Schaffer}
 
  \seealso{
  	For more information see \code{\link{RTF}}.

@@ -9,9 +9,7 @@
  \name{startParagraph.RTF}
 \alias{startParagraph.RTF}
 \alias{RTF.startParagraph}
-\alias{startParagraph.RTF}
 \alias{startParagraph,RTF-method}
-
 
  \title{Start a new paragraph in the RTF document}
 
@@ -19,14 +17,16 @@
 	Start a new paragraph in the RTF document.
  }
 
- \usage{\method{startParagraph}{RTF}(this, ...)}
+ \usage{
+\method{startParagraph}{RTF}(this, ...)
+}
 
  \arguments{
  	\item{this}{An RTF object.}
  	\item{...}{Not used.}
  }
 
- \author{Michael E. Schaffer}
+ \author{Michael Schaffer}
 
  \seealso{
    For more information see \code{\link{RTF}}.

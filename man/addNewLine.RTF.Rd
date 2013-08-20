@@ -9,9 +9,7 @@
  \name{addNewLine.RTF}
 \alias{addNewLine.RTF}
 \alias{RTF.addNewLine}
-\alias{addNewLine.RTF}
 \alias{addNewLine,RTF-method}
-
 
  \title{Insert a new line into the RTF document}
 
@@ -19,14 +17,17 @@
 	Insert a new line into the RTF document.
  }
 
- \usage{\method{addNewLine}{RTF}(this, ...)}
+ \usage{
+\method{addNewLine}{RTF}(this, n=1, ...)
+}
 
  \arguments{
  	\item{this}{An RTF object.}
+ 	\item{n}{Number of lines to add. Default is 1. \bold{optional}}
  	\item{...}{Not used.}
  }
 
- \author{Michael E. Schaffer}
+ \author{Michael Schaffer}
 
  \seealso{
    For more information see \code{\link{RTF}}.

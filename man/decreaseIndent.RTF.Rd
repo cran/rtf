@@ -9,9 +9,7 @@
  \name{decreaseIndent.RTF}
 \alias{decreaseIndent.RTF}
 \alias{RTF.decreaseIndent}
-\alias{decreaseIndent.RTF}
 \alias{decreaseIndent,RTF-method}
-
 
  \title{Decrease RTF document indent}
 
@@ -19,14 +17,16 @@
 	Decrease RTF document indent.
  }
 
- \usage{\method{decreaseIndent}{RTF}(this, ...)}
+ \usage{
+\method{decreaseIndent}{RTF}(this, ...)
+}
 
  \arguments{
  	\item{this}{An RTF object.}
  	\item{...}{Not used.}
  }
 
- \author{Michael E. Schaffer}
+ \author{Michael Schaffer}
 
  \seealso{
    For more information see \code{\link{RTF}}.

@@ -9,9 +9,7 @@
  \name{done.RTF}
 \alias{done.RTF}
 \alias{RTF.done}
-\alias{done.RTF}
 \alias{done,RTF-method}
-
 
  \title{Write and close the RTF output}
 
@@ -19,14 +17,16 @@
 	Write and close the RTF output.
  }
 
- \usage{\method{done}{RTF}(this, ...)}
+ \usage{
+\method{done}{RTF}(this, ...)
+}
 
  \arguments{
  	\item{this}{An RTF object.}
  	\item{...}{Not used.}
  }
 
- \author{Michael E. Schaffer}
+ \author{Michael Schaffer}
 
  \seealso{
  	For more information see \code{\link{RTF}}.

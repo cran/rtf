@@ -9,9 +9,7 @@
  \name{addTrellisObject.RTF}
 \alias{addTrellisObject.RTF}
 \alias{RTF.addTrellisObject}
-\alias{addTrellisObject.RTF}
 \alias{addTrellisObject,RTF-method}
-
 
  \title{Insert a trellis plot object into the RTF document}
 
@@ -19,7 +17,9 @@
 	Insert a trellis plot object into the RTF document.
  }
 
- \usage{\method{addTrellisObject}{RTF}(this, trellis.object, width=3, height=0.3, res=300, rotate=NULL, ...)}
+ \usage{
+\method{addTrellisObject}{RTF}(this, trellis.object, width=3, height=0.3, res=300, rotate=NULL, ...)
+}
 
  \arguments{
  	\item{this}{An RTF object.}
@@ -42,6 +42,7 @@
  }
 
  \examples{
+ \dontrun{
  rtf<-RTF("test_addTrellisObject.doc",width=8.5,height=11,font.size=10,omi=c(1,1,1,1))
  if(require(lattice) & require(grid)) {
  	# multipage trellis object
@@ -50,8 +51,9 @@
  }
  done(rtf)
  }
+ }
 
- \author{Michael E. Schaffer}
+ \author{Michael Schaffer}
 
  \seealso{
    For more information see \code{\link{RTF}}.

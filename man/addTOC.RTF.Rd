@@ -6,19 +6,19 @@
 % by the Rdoc compiler part of the R.oo package.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
- \name{view.RTF}
-\alias{view.RTF}
-\alias{RTF.view}
-\alias{view,RTF-method}
+ \name{addTOC.RTF}
+\alias{addTOC.RTF}
+\alias{RTF.addTOC}
+\alias{addTOC,RTF-method}
 
- \title{View encoded RTF}
+ \title{Insert table of contents field}
 
  \description{
-	View encoded RTF.
+	Insert table of contents field.
  }
 
  \usage{
-\method{view}{RTF}(this, ...)
+\method{addTOC}{RTF}(this, ...)
 }
 
  \arguments{
@@ -26,14 +26,10 @@
  	\item{...}{Not used.}
  }
 
- \value{
- 	Output the content of the object as RTF code.
- }
-
  \author{Michael Schaffer}
 
  \seealso{
- 	For more information see \code{\link{RTF}}.
+   For more information see \code{\link{RTF}}.
  }
 
 

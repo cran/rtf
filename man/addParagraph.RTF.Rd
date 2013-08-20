@@ -9,9 +9,7 @@
  \name{addParagraph.RTF}
 \alias{addParagraph.RTF}
 \alias{RTF.addParagraph}
-\alias{addParagraph.RTF}
 \alias{addParagraph,RTF-method}
-
 
  \title{Insert a paragraph into the RTF document}
 
@@ -19,14 +17,16 @@
 	Insert a paragraph into the RTF document.
  }
 
- \usage{\method{addParagraph}{RTF}(this, ...)}
+ \usage{
+\method{addParagraph}{RTF}(this, ...)
+}
 
  \arguments{
  	\item{this}{An RTF object.}
  	\item{...}{A character \code{\link[base]{vector}} of text to add.}
  }
 
- \author{Michael E. Schaffer}
+ \author{Michael Schaffer}
 
  \seealso{
    For more information see \code{\link{RTF}}.
