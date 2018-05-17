@@ -83,6 +83,7 @@
 # \seealso{
 # 	@seeclass
 # }
+#
 #*/#########################################################################
 setConstructorS3("RTF", 
 	function(file="",width=8.5,height=11,omi=c(1,1,1,1),font.size=10) {
@@ -144,6 +145,7 @@ setConstructorS3("RTF",
 # }
 # 
 # @keyword -internal
+#
 #*/###########################################################################
 setMethodS3("addTable", "RTF", function(this,dat,col.widths=NULL,col.justify=NULL,header.col.justify=NULL,font.size=NULL,row.names=FALSE,NA.string="-", space.before=NULL, space.after=NULL, ...) {
 	if(is.null(font.size)) {
@@ -243,6 +245,7 @@ setMethodS3("done", "RTF", function(this, ...) {
 # }
 # 
 # @keyword -internal
+#
 #*/#########################################################################
 setMethodS3("addTOC", "RTF", function(this,...) {
 	toc<-"{\\field\\flddirty\\fldedit{\\*\\fldinst TOC f h}{\\fldrslt Update Field (right-click in MS Word) to show Table of Contents}}\\line\\line"
@@ -284,6 +287,7 @@ setMethodS3("addTOC", "RTF", function(this,...) {
 # }
 # 
 # @keyword -internal
+#
 #*/#########################################################################
 setMethodS3("addHeader", "RTF", function(this, title,subtitle=NULL,font.size=NULL,TOC.level=NULL,...) {
 	if(is.null(font.size)) {
@@ -320,6 +324,7 @@ setMethodS3("addHeader", "RTF", function(this, title,subtitle=NULL,font.size=NUL
 # }
 # 
 # @keyword -internal
+#
 #*/#########################################################################
 setMethodS3("addText", "RTF", function(this, ..., bold=FALSE, italic=FALSE) {
 	text<-paste(... , sep="")
@@ -355,6 +360,7 @@ setMethodS3("addText", "RTF", function(this, ..., bold=FALSE, italic=FALSE) {
 # }
 # 
 # @keyword -internal
+#
 #*/#########################################################################
 setMethodS3("addParagraph", "RTF", function(this, ...) {
 	text<-paste(... , sep="")
@@ -391,6 +397,7 @@ setMethodS3("addParagraph", "RTF", function(this, ...) {
 # }
 # 
 # @keyword -internal
+#
 #*/#########################################################################
 setMethodS3("startParagraph", "RTF", function(this, ...) {
 	this$.rtf <- paste(this$.rtf,.start.paragraph(indent=this$.indent),sep="")
@@ -419,6 +426,7 @@ setMethodS3("startParagraph", "RTF", function(this, ...) {
 # }
 # 
 # @keyword -internal
+#
 #*/#########################################################################
 setMethodS3("endParagraph", "RTF", function(this, ...) {
 	this$.rtf <- paste(this$.rtf,.end.paragraph(),sep="")
@@ -456,6 +464,7 @@ setMethodS3("endParagraph", "RTF", function(this, ...) {
 # }
 # 
 # @keyword -internal
+#
 #*/###########################################################################
 setMethodS3("addPageBreak", "RTF", function(this, width=8.5,height=11,omi=c(1,1,1,1), ...) {
 	this$.rtf <- paste(this$.rtf,.add.page.break(width=width,height=height,omi=omi),sep="")	
@@ -488,6 +497,7 @@ setMethodS3("addPageBreak", "RTF", function(this, width=8.5,height=11,omi=c(1,1,
 # }
 # 
 # @keyword -internal
+#
 #*/#########################################################################
 setMethodS3("addNewLine", "RTF", function(this, n=1, ...) {
 	this$.rtf <- paste(this$.rtf,.add.newline(n=n,font.size=this$.font.size),sep="")
@@ -516,6 +526,7 @@ setMethodS3("addNewLine", "RTF", function(this, n=1, ...) {
 # }
 # 
 # @keyword -internal
+#
 #*/#########################################################################
 setMethodS3("increaseIndent", "RTF", function(this, ...) {
 	this$.indent <- this$.indent + 720 # 1/2" increments
@@ -544,6 +555,7 @@ setMethodS3("increaseIndent", "RTF", function(this, ...) {
 # }
 # 
 # @keyword -internal
+#
 #*/#########################################################################
 setMethodS3("decreaseIndent", "RTF", function(this, ...) {
 	this$.indent <- max(0,this$.indent - 720) # 1/2" increments
@@ -573,6 +585,7 @@ setMethodS3("decreaseIndent", "RTF", function(this, ...) {
 # }
 # 
 # @keyword -internal
+#
 #*/#########################################################################
 setMethodS3("setFontSize", "RTF", function(this, font.size, ...) {
 	this$.font.size <- font.size
@@ -622,6 +635,7 @@ setMethodS3("setFontSize", "RTF", function(this, font.size, ...) {
 # }
 # 
 # @keyword -internal
+#
 #*/#########################################################################
 setMethodS3("addPlot", "RTF", function(this,plot.fun=plot.fun,width=3.0,height=0.3,res=300, ...) {
 	if(!is.null(this$.font.size)) {
@@ -668,6 +682,7 @@ setMethodS3("addPlot", "RTF", function(this,plot.fun=plot.fun,width=3.0,height=0
 # }
 # 
 # @keyword -internal
+#
 #*/#########################################################################
 setMethodS3("addPng", "RTF", function(this,file,width=3.0,height=0.3, ...) {
 	if(!is.null(this$.font.size)) {
@@ -729,6 +744,7 @@ setMethodS3("addPng", "RTF", function(this,file,width=3.0,height=0.3, ...) {
 # }
 # 
 # @keyword -internal
+#
 #*/#########################################################################
 setMethodS3("addTrellisObject", "RTF", function(this,trellis.object,width=3.0,height=0.3,res=300, rotate=NULL, ...) {
 	tmp.file<-tempfile("temp_rtf_trellis")
@@ -773,6 +789,7 @@ setMethodS3("addTrellisObject", "RTF", function(this,trellis.object,width=3.0,he
 # }
 # 
 # @keyword -internal
+#
 #*/#########################################################################
 setMethodS3("addSessionInfo", "RTF", function(this, locale = TRUE, ...) {
 	
@@ -841,18 +858,28 @@ setMethodS3("addSessionInfo", "RTF", function(this, locale = TRUE, ...) {
 ######################################################################################
 
 .start.rtf<-function(width=8.5,height=11,omi=c(1,1,1,1)) {
-	paste("{\\rtf1\\ansi\n\\deff",.add.font.table(),.add.paper.size(width=width,height=height),"\n",.add.page.margins(omi),"\n",.add.page.numbers(),"\n",sep="")
+	paste("{\\rtf1\\ansi\n\\deff",.add.font.table(),.add.color.table(),.add.paper.size(width=width,height=height),"\n",.add.page.margins(omi),"\n",.add.page.numbers(),"\n",sep="")
 }
 
 .add.font.table<-function() {
 	fonts<-character()
-	fonts[1]<-"{\\f1\\fswiss\\fcharset0 Helvetica;}"
+	fonts[1]<-"{\\f1\\fswiss\\fcharset0 Helvetica;}" # default
 	fonts[2]<-"{\\f2\\ffroman\\charset0\\fprg2 Times New Roman;}"
 	fonts[3]<-"{\\f3\\ffswiss\\charset0\\fprg2 Arial;}"
 	fonts[4]<-"{\\f4\\fftech\\charset0\\fprg2 Symbol;}"
 	fonts[5]<-"{\\f4\\ffroman\\charset0\\fprg2 Cambria;}"
 	
 	paste("{\\fonttbl",paste(fonts,collapse="\n"),"}",sep="\n")
+}
+
+.add.color.table<-function() {
+	colors<-character()
+	colors[1]<-"{\\red0\\green0\\blue0;}" # default
+	colors[2]<-"{\\red255\\green0\\blue0;}"
+	colors[3]<-"{\\red0\\green255\\blue0;}"
+	colors[4]<-"{\\red0\\green0\\blue255;}"
+	
+	paste("{\\colortbl",paste(colors,collapse="\n"),"}",sep="\n")
 }
 
 .add.page.numbers<-function() {
@@ -1504,3 +1531,27 @@ setMethodS3("addSessionInfo", "RTF", function(this, locale = TRUE, ...) {
 	}
 	return(decimal)
 }
+
+
+
+# Functions for pivoting data tables
+# this is especially useful for pivoting data frames created with ddply.
+# Additional options for including gaps between repeated categories
+#
+#
+# tab<-cast(stats, Marker + Visit + TRT ~ stat)
+# split.cols<-c("Marker","Visit")
+# 
+# removedups<-function(x){ x[which(as.character(x) == c(tail(as.character(x),-1),NA))+1]<-NA; x }
+# removedups_previous<-function(x,y){ x[ setdiff(which(as.character(x) == c(tail(as.character(x),-1),NA))+1,which(!is.na(y))) ]<-NA; x }
+# 
+# tab[,split.cols[1]]<-removedups(tab[,split.cols[1]])
+# for(i in 2:length(split.cols)) {
+# 	tab[,split.cols[i]]<-removedups_previous(tab[,split.cols[i]],tab[,split.cols[i-1]])
+# }
+# 
+# # Insert section breaks
+# idx<-order( c( 1:nrow(tab), which(apply(!is.na(tab[,split.cols]), 1, any))-0.5  )) # break at previous row
+# idx[which(idx>nrow(tab))]<-NA
+# tab<-tab[idx,]
+# colnames(tab)<-c("Marker","Visit","Trt","N","Mean Change From Baseline","Diff. Estimate (95CI)","P")
