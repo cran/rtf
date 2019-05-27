@@ -1,15 +1,16 @@
-88d2458021f9406127e3d5d7092418b8 *DESCRIPTION
-6015fa85e83b9586bfa2728035def343 *NAMESPACE
+7b7d552d8b2d1fd9dc155455fc7f5e74 *DESCRIPTION
+1b613e9cff59934637d5a40c3b7a37a1 *NAMESPACE
 4bb517c9079f824be6a8ada45ffb4fa5 *NEWS
 c70b4f49da19d10a1caa5eea5a0b1646 *R/000.R
 5b3829e46dfdaab40048f81006bc223f *R/999.NonDocumentedObjects.R
 e8a3d5d61e56d96501584618f59e23c0 *R/999.package.R
 43df9ca89bfd981ea655b4e217c46fd9 *R/forest.plot.R
-2c757fd0158d7ad2fbaebe80d6feaebe *R/rtf.R
+74b85c63555a533b4e8021b62bb7636c *R/rtf.R
+6cb394c4a66129a110f35c289285cf5b *README.md
 07b257aa180d1cc189f051b6a4963df1 *build/vignette.rds
 6e917732587d97373e4ad04888db419d *inst/doc/rtf.R
 cabe9cd967e1bb16eb2d3a06cf4402b2 *inst/doc/rtf.Rnw
-055e8dd0ed3a3de76b380facf3855236 *inst/doc/rtf.pdf
+a1ce87c1930ee0bbd4c9f68a24785b89 *inst/doc/rtf.pdf
 3dc27d9397bf3d389a60b73d012e527a *man/Non-documented_objects.Rd
 ba105e7432bf356820b2a69b068aa4c8 *man/RTF.Rd
 bb6195f3c38920a8d13ab0d3767d8ffa *man/addHeader.RTF.Rd
@@ -32,5 +33,5 @@ b71c5f88c5bd2130adf6681e5ddadd60 *man/increaseIndent.RTF.Rd
 d82b3c397c339f67c982b430523de204 *man/setFontSize.RTF.Rd
 215f129af18f2b3cf6900dcd472ef046 *man/startParagraph.RTF.Rd
 dcb400c9b1de65af049cf18dd74dbe74 *man/view.RTF.Rd
-2273e5f32ab901f9a00e568dd501e175 *tests/tests.R
+7ac9ca73262f0f9ce21ea394fe19efa9 *tests/tests.R
 cabe9cd967e1bb16eb2d3a06cf4402b2 *vignettes/rtf.Rnw
