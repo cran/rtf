@@ -1,4 +1,4 @@
-7b7d552d8b2d1fd9dc155455fc7f5e74 *DESCRIPTION
+90dae651b41d0896951614ec3c9dea14 *DESCRIPTION
 1b613e9cff59934637d5a40c3b7a37a1 *NAMESPACE
 4bb517c9079f824be6a8ada45ffb4fa5 *NEWS
 c70b4f49da19d10a1caa5eea5a0b1646 *R/000.R
@@ -7,12 +7,12 @@ e8a3d5d61e56d96501584618f59e23c0 *R/999.package.R
 43df9ca89bfd981ea655b4e217c46fd9 *R/forest.plot.R
 74b85c63555a533b4e8021b62bb7636c *R/rtf.R
 6cb394c4a66129a110f35c289285cf5b *README.md
-07b257aa180d1cc189f051b6a4963df1 *build/vignette.rds
+1d3a4e9d41a58c723f5303b17ddc9263 *build/vignette.rds
 6e917732587d97373e4ad04888db419d *inst/doc/rtf.R
 cabe9cd967e1bb16eb2d3a06cf4402b2 *inst/doc/rtf.Rnw
-a1ce87c1930ee0bbd4c9f68a24785b89 *inst/doc/rtf.pdf
+45498d159b72b5f4f81eff15b86b71f2 *inst/doc/rtf.pdf
 3dc27d9397bf3d389a60b73d012e527a *man/Non-documented_objects.Rd
-ba105e7432bf356820b2a69b068aa4c8 *man/RTF.Rd
+3eeb2c495df090de5442397d703ddd41 *man/RTF.Rd
 bb6195f3c38920a8d13ab0d3767d8ffa *man/addHeader.RTF.Rd
 b263cbecb4eed4461f018f6faea8e3ec *man/addNewLine.RTF.Rd
 7b4b105758c9c165f1a3e6a0be7bd86b *man/addPageBreak.RTF.Rd

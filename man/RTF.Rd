@@ -42,7 +42,6 @@ RTF(file="", width=8.5, height=11, omi=c(1, 1, 1, 1), font.size=10)
  	\item{height}{The width of the output page.}
  	\item{omi}{A \code{\link[base]{vector}} representing the outer margins in inches (bottom, left, top, right).}
 	\item{font.size}{Default font size for the document in points.}
- 	\item{...}{Not used.}
  }
 
  \section{Fields and Methods}{

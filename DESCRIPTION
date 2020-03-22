@@ -1,5 +1,5 @@
 Package: rtf
-Version: 0.4-14
+Version: 0.4-14.1
 Depends: R (>= 2.10.1)
 Imports: R.oo, R.methodsS3
 Suggests: ggplot2, lattice, grid, xtable, gsubfn
@@ -9,11 +9,11 @@ Authors@R: c(person(c("Michael","E."), "Schaffer", role=c("aut", "cre", "cph"), 
 Description: A set of R functions to output Rich Text Format (RTF) files with high resolution tables and graphics that may be edited with a standard word processor such as Microsoft Word.
 License: GPL (>= 2)
 LazyLoad: TRUE
-Packaged: 2019-05-27 02:03:02 UTC; mschaff
+Packaged: 2020-03-22 09:06:07 UTC; hornik
 NeedsCompilation: no
 Repository: CRAN
 URL: https://github.com/schaffman5/rtf
 BugReports: https://github.com/schaffman5/rtf/issues
 Author: Michael E. Schaffer [aut, cre, cph]
 Maintainer: Michael E. Schaffer <mschaff@gmail.com>
-Date/Publication: 2019-05-27 05:00:03 UTC
+Date/Publication: 2020-03-22 09:32:44 UTC
